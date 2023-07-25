@@ -1,0 +1,45 @@
+views/index.ejs
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Page</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Data Page</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Team Name</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Number</th>
+        <th>City</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      {data.map((item,index) => 
+        <tr key={index}>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      )}
+    </tbody>
+  </table>
+</body>
+</html>
+
